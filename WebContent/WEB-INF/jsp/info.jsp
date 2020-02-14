@@ -7,7 +7,14 @@
 <title>Insert title here</title>
 </head>
 <body>
-    <h1>Spring Framework is Working....~!!!!</h1>
-    <a href="page.do">Move To second Page</a>
+<h1><u>People</u></h1>
+<ul>
+   <%
+    String[] people= (String[]) request.getAttribute("people");
+    for(String x:people){
+   %>
+   <li><%=x%></li>
+   <%} %>
+ </ul>
 </body>
 </html>
